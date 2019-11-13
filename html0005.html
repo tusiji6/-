@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>兔斯基的网站</title>
+    <!-- 在head里面定义样式，style标记 -->
+    <style>
+      /*
+        样式选择器一，样式名称 表示元素的class属性为样式名称的套用效果
+        例如 .mycolor的效果是蓝底白色
+       */
+      .mycolor {
+        /* 样式的注释，  background-color是背景颜色，取值方式和color一样 */
+         color: aliceblue;
+        background-color: blue;
+       }
+
+       .mybg {
+           /* 设置宽度和背景图片 */
+           width: 100px;
+           background-image: url('img8.jpg');
+           /* 设置高度 height */
+           height: 100px;
+           /*  背景图片大小（缩放方式） cover表示尽量适应元素的大小 */
+           background-size: cover;
+       }
+    </style>
+
 </head>
 
 <body>
+    <header style="text-align: right;">
+        <a href="index.html">返回目录</a>
+   </header>
+  
 <!-- 一1个完全没有任何效果的非块级元素 span -->
 <span>默认没有任何效果</span>
 span前面-<span>默认没有任何效果</span>span后面
@@ -19,7 +46,7 @@ div后面的元素会另起一行
 <main>main页面主体</main>
 <footer>footer脚部</footer>
 <nav>nav导航栏</nav>
-<menu>menu菜单栏</menu>
+<menu>menu菜单栏，带有默认样式</menu>
 <section>section-div的替代品，区块</section>
 <!-- 
     css入门
@@ -31,11 +58,23 @@ div后面的元素会另起一行
     最麻烦的是rgb,括号里面是0-255的三原色
  -->
 
-<span style="color: red;">1</span><span style="color: yellow;">2</span><span style="color: blue;">3</span>
-<span style="color: chartreuse;">4</span><span style="color: crimson;">5</span><span style="color: lawngreen;">6</span>
+<span style="color: red;">1</span>
+<span style="color: yellow;">2</span>
+<span style="color: blue;">3</span>
+<span style="color: chartreuse;">4</span>
+<span style="color: crimson;">5</span>
+<span style="color: lawngreen;">6</span>
+<hr>
+<section class="mycolor" >
+<!-- 
+    第二种样式设置，常用
+ -->
+ 设置颜色
+</section>
 
-
-
+<section class="mybg">
+  背景图片
+</section>
 
 
 
